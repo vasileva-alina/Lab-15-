@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title >Taste Corner - вкусно и быстро!</title>
+    <meta name="description" content="Здесь вы найдете различные виды блюд и напитков.">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-uppercase fw-bold text-dark md-4">Taste Corner</h1> 
+        <nav>
+            <ul class="navbar">
+                <li class="fw-bold md-4"><a id="openBtn">Меню</a></li>
+                <li class="fw-bold md-4"><a href="index1.html">Детское меню</a></li>
+                <li class="fw-bold md-4"><a href="#">О нас</a></li>
+                <li class="fw-bold md-4"><a href="index.html">Главная</a></li>
+                <li class="fw-bold md-4"><a href="#">Заказ:</a><span id="Sum"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu" class="menu">
+        <h2>Детское меню</h2>
+        <ul>
+            <li><a href="#drinkss">Напитки</a></li>
+            <li><a href="#eat">Блюда</a></li>
+        </ul>
+        <button id="closeBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg></button> 
+    </div>
+    <div class="drinks">Детское меню</div>
+    <div class="eat" id="drinkss" >Напитки</div>
+
+    <div class="content">
+
+   <div class="card">
+     <div class="card-body">
+       <h4 class="card-title">Сок</h4>
+       <h6 class="card-subtitle-text-muted">250мл.</h6>
+     </div>
+     <img src="https://avatars.mds.yandex.net/i?id=faa9bbd5bc1354241f82b32facfae7f6_l-10284885-images-thumbs&n=13" alt="Сок">
+     <div class="card-body-2">
+       <div id="change" class="change-1">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+       </div>
+       <button class="card-link-2" onclick="Add(this)">Добавить 105руб.</button>
+     </div>
+   </div>
+   
+   <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Коктель (мол.)</h4>
+      <h6 class="card-subtitle-text-muted">250мл.</h6>
+    </div>
+    <img src="https://avatars.mds.yandex.net/i?id=a894359a3e189b6e6e1c24f108127b72_l-13010480-images-thumbs&n=13" alt="Коктель (мол.)">
+    <div class="card-body-2">
+      <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+       </div>
+       <button class="card-link-2" onclick="Add(this)">Добавить 105руб.</button>
+     </div>
+  </div>
+   
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Морс</h4>
+      <h6 class="card-subtitle-text-muted">250мл.</h6>
+    </div>
+    <img src="https://avatars.mds.yandex.net/get-eda/3593277/86aa824ee5f9c1e72bee412777b1870a/orig" alt="Морс">
+    <div class="card-body-2">
+      <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+      </div>
+      <button class="card-link-2" onclick="Add(this)">Добавить 250руб.</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Какао</h4>
+      <h6 class="card-subtitle-text-muted">250мл.</h6>
+    </div>
+    <img src="https://icecreamclub.ru/upload/iblock/fb0/fb05e56fb1f06430b331b0a8a50c0c4c.jpg" alt="Какао">
+    <div class="card-body-2">
+      <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+      </div>
+      <button class="card-link-2" onclick="Add(this)">Добавить 120руб.</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Чай</h4>
+      <h6 class="card-subtitle-text-muted">0.5 л.</h6>
+    </div>
+    <img src="https://avatars.mds.yandex.net/i?id=c0772e1256cb42562926eea884610431bf2bb8a6-4575585-images-thumbs&n=13" alt="Чай">
+    <div class="card-body-2">
+      <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+      </div>
+      <button class="card-link-2" onclick="Add(this)">Добавить 200руб.</button>
+    </div>
+  </div>
+
+  </div>
+  <div class="eat" id="eat" >Блюда</div>
+
+  <div class="content-2">
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Паста с сыром</h4>
+        <h6 class="card-subtitle-text-muted">300 г.</h6>
+      </div>
+      <img src="https://natura.ru/upload/1982614180.webp" alt="Паста с сыром">
+      <div class="card-body-2">
+        <div id="change" class="change">
+          <button onclick="Min(this)">-</button>
+          <span class="colvo">0</span>
+          <button onclick="Sum(this)">+</button>
+        </div>
+        <button class="card-link-2" onclick="Add(this)">Добавить 330руб.</button>
+      </div>
+    </div>
+    
+    <div class="card">
+     <div class="card-body">
+       <h4 class="card-title">Блины</h4>
+       <h6 class="card-subtitle-text-muted">300 г.</h6>
+     </div>
+     <img src="https://sun9-41.userapi.com/impg/rlmWRVNsVAIPGHh1AoSUyONFjMHIJ1WpdJJedg/udqJIQQMwEU.jpg?size=604x537&quality=95&sign=048d4543a105379bf05af507b1cafdb0&c_uniq_tag=1bd8hDDUhg-1z2m_VTHQq-xMR8izuon7jSe8bLXbuzw&type=album" alt="Блины">
+     <div class="card-body-2">
+       <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+       </div>
+       <button class="card-link-2" onclick="Add(this)">Добавить 420руб.</button>
+     </div>
+   </div>
+    
+   <div class="card">
+     <div class="card-body">
+       <h4 class="card-title">Пицца</h4>
+       <h6 class="card-subtitle-text-muted">300 г.</h6>
+     </div>
+     <img src="https://i.pinimg.com/736x/dc/49/07/dc4907789c3073843fbc69baae141105.jpg" alt="Пицца">
+     <div class="card-body-2">
+       <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+       </div>
+       <button class="card-link-2" onclick="Add(this)">Добавить 329руб.</button>
+     </div>
+   </div>
+ 
+   <div class="card">
+     <div class="card-body">
+       <h4 class="card-title">Каша (овс.)</h4>
+       <h6 class="card-subtitle-text-muted">300 г.</h6>
+     </div>
+     <img src="https://fsd.multiurok.ru/html/2018/12/01/s_5c02cd8b0b361/1014603_5.jpeg" alt="Каша">
+     <div class="card-body-2">
+       <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+       </div>
+       <button class="card-link-2" onclick="Add(this)">Добавить 400руб.</button>
+     </div>
+   </div>
+ 
+   <div class="card">
+     <div class="card-body">
+       <h4 class="card-title">Котлеты + рис</h4>
+       <h6 class="card-subtitle-text-muted">300 г.</h6>
+     </div>
+     <img src="https://avatars.mds.yandex.net/i?id=6c4bfbd9dbfca68a3ff72108f91f9c5bf66ad0ac_l-9181079-images-thumbs&ref=rim&n=13&w=800&h=800" alt="Чай">
+     <div class="card-body-2">
+       <div id="change" class="change">
+        <button onclick="Min(this)">-</button>
+        <span class="colvo">0</span>
+        <button onclick="Sum(this)">+</button>
+       </div>
+       <button class="card-link-2" onclick="Add(this)">Добавить 350руб.</button>
+     </div>
+   </div>
+ 
+   </div>
+
+ 
+   </div>
+
+    <script src="index.js">
+    </script>
+    <footer>
+        <p class="text2">
+            📍 Адрес: Заводская ул., 7А, микрорайон Климовск 
+            📞 Телефон: +7 (123) 456-78-90  
+            <br>Часы работы:  Пн-Вс: 9:00 - 22:00  
+            <br>© 2023 Кафе "Taste Corner". Все права защищены.  
+        </p>
+    </footer>
+</body>
+
+</html>

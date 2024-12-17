@@ -1,0 +1,170 @@
+html{
+    margin: 0%;
+    padding: 3px;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+}
+
+header { 
+    width: 100%;
+    height: 70px; 
+    background-color: rgb(177, 241, 230);
+}
+
+.text-uppercase fw-bold text-dark md-4 {
+    font-size: 30px;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    margin-left: 20px;
+    color: black;
+    font-size: 30px;
+}
+.navbar {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Используем flexbox для выстраивания в ряд */
+    margin-left: 450px;
+    margin-top: -20px;
+}
+.navbar li {
+    margin-right: 50px; /* Отступ между пунктами списка */
+    margin-top: -50px;
+}
+.navbar a {
+    color: black; /* Цвет текста ссылок */
+    text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+       
+}
+
+.menu {
+    width: 250px;
+    height: 90%;
+    margin-top: 75px;
+    background-color: rgb(31, 115, 109);
+    color: white;
+    position: fixed;
+    left: -270px; /* Скрыто за пределами экрана */
+    transition: left 0.3s ease;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+    z-index: 1000;
+}
+.menu a {
+    color: white; /* Цвет текста ссылок */
+    text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+}
+.menu.open {
+    left: 0; /* Показываем меню */
+}
+button {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: solid 2px rgba(0, 0, 0, 0.749);
+    border-radius: 5px;
+    background-color:  white;
+}
+.change {
+    margin-left: 35px;
+}
+.change-1 {
+    margin-left: 30px;
+}
+.drinks {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(31, 115, 109);
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.eat {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(31, 115, 109);
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ttt {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(31, 115, 109);
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    flex: 1;
+    margin-top: 230px;
+}
+.content-2 {
+    display: flex;
+    margin-top: 230px;
+}
+.content-3 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color:  rgb(31, 115, 109);
+    color: white; /* Цвет фона (необязательно) */
+    padding: 10px; /* Отступы внутри контейнера (необязательно) */
+    border-radius: 10px; /* Радиус закругления углов */
+    
+    margin-top: 20px;
+}
+.content-4 {
+    margin-top: 20px;
+}
+
+.card {
+    margin-top: -210px;
+    width: 200px;
+    height: 400px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+img {
+  width: 199px;
+  height: 200px;
+  border-radius: 2px;
+}
+
+.card-link-2 {
+    width: 160px;
+    height: 30px;
+    border: solid 2px rgba(0, 0, 0, 0.71);
+    border-radius: 5px;
+    background-color:  rgb(31, 115, 109);
+    color: white;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+.text2 {
+    margin-left: 80px;
+    text-align: center;
+    color: grey;
+}
+
+footer {
+    width: 1257px;
+    height: 70px;
+    background-color: black;
+    margin-top: 100px;
+}
